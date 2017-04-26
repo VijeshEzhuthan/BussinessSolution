@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/BussinessSolutionServiceBLL" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/BussinessSolutionServiceBLL" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:36659/PurchaseService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ArrayOfStockInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="StockInfo" nillable="true" type="tns:StockInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfStockInfo" nillable="true" type="tns:ArrayOfStockInfo" />
+  <xs:complexType name="StockInfo">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ProductInfo">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="QtyPriceInfo" nillable="true" type="tns:ArrayOfStockPriceInfo" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="StockInfo" nillable="true" type="tns:StockInfo" />
+  <xs:complexType name="ProductInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DisplayProductName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsDifferentRateInSize" type="ser:char" />
+      <xs:element minOccurs="0" name="IsGiftItem" type="ser:char" />
+      <xs:element minOccurs="0" name="IsTaxableItem" type="ser:char" />
+      <xs:element name="ProductCategoryInfo" nillable="true" type="tns:CategoryInfo" />
+      <xs:element name="ProductCode" type="xs:int" />
+      <xs:element minOccurs="0" name="ProductDescription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VendorInfo" nillable="true" type="tns:SupplierInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProductInfo" nillable="true" type="tns:ProductInfo" />
+  <xs:complexType name="CategoryInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CategoryCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CategoryID" type="xs:int" />
+      <xs:element minOccurs="0" name="CategoryName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CategoryInfo" nillable="true" type="tns:CategoryInfo" />
+  <xs:complexType name="SupplierInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+      <xs:element name="IsManufacture" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Phone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Pincode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="State" nillable="true" type="xs:string" />
+      <xs:element name="SupplierID" type="xs:long" />
+      <xs:element minOccurs="0" name="SupplierName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TIN" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SupplierInfo" nillable="true" type="tns:SupplierInfo" />
+  <xs:complexType name="ArrayOfStockPriceInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="StockPriceInfo" nillable="true" type="tns:StockPriceInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfStockPriceInfo" nillable="true" type="tns:ArrayOfStockPriceInfo" />
+  <xs:complexType name="StockPriceInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="RetailRate" type="xs:decimal" />
+      <xs:element minOccurs="0" name="UnitID" type="xs:int" />
+      <xs:element minOccurs="0" name="UoM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WholeSaleRate" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="StockPriceInfo" nillable="true" type="tns:StockPriceInfo" />
+  <xs:complexType name="PurchaseDetaiInfo">
+    <xs:sequence>
+      <xs:element name="CreateDate" type="xs:int" />
+      <xs:element name="InvoiceDate" type="xs:int" />
+      <xs:element minOccurs="0" name="InvoiceNum" nillable="true" type="xs:string" />
+      <xs:element name="PurchaseID" type="xs:int" />
+      <xs:element minOccurs="0" name="PurchaseitemList" nillable="true" type="tns:ArrayOfPurchaseInfo" />
+      <xs:element name="TotalAmount" type="xs:decimal" />
+      <xs:element name="VendorID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PurchaseDetaiInfo" nillable="true" type="tns:PurchaseDetaiInfo" />
+  <xs:complexType name="ArrayOfPurchaseInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PurchaseInfo" nillable="true" type="tns:PurchaseInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPurchaseInfo" nillable="true" type="tns:ArrayOfPurchaseInfo" />
+  <xs:complexType name="PurchaseInfo">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ProductInfo">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Qty" type="xs:decimal" />
+          <xs:element minOccurs="0" name="RetailRate" type="xs:decimal" />
+          <xs:element minOccurs="0" name="UnitID" type="xs:int" />
+          <xs:element minOccurs="0" name="UoM" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="WholeSaleRate" type="xs:decimal" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PurchaseInfo" nillable="true" type="tns:PurchaseInfo" />
+</xs:schema>

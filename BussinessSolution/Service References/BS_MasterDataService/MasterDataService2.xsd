@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/BussinessSolutionServiceBLL" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/BussinessSolutionServiceBLL" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:36659/MasterDataService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="PagerInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Filter" nillable="true" type="xs:string" />
+      <xs:element name="PageIndex" type="xs:int" />
+      <xs:element name="PageSize" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PagerInfo" nillable="true" type="tns:PagerInfo" />
+  <xs:complexType name="ArrayOfSupplierInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SupplierInfo" nillable="true" type="tns:SupplierInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSupplierInfo" nillable="true" type="tns:ArrayOfSupplierInfo" />
+  <xs:complexType name="SupplierInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+      <xs:element name="IsManufacture" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Phone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Pincode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="State" nillable="true" type="xs:string" />
+      <xs:element name="SupplierID" type="xs:long" />
+      <xs:element minOccurs="0" name="SupplierName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TIN" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SupplierInfo" nillable="true" type="tns:SupplierInfo" />
+  <xs:complexType name="ArrayOfProductInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ProductInfo" nillable="true" type="tns:ProductInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProductInfo" nillable="true" type="tns:ArrayOfProductInfo" />
+  <xs:complexType name="ProductInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DisplayProductName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsDifferentRateInSize" type="ser:char" />
+      <xs:element minOccurs="0" name="IsGiftItem" type="ser:char" />
+      <xs:element minOccurs="0" name="IsTaxableItem" type="ser:char" />
+      <xs:element name="ProductCategoryInfo" nillable="true" type="tns:CategoryInfo" />
+      <xs:element name="ProductCode" type="xs:int" />
+      <xs:element minOccurs="0" name="ProductDescription" nillable="true" type="xs:string" />
+      <xs:element name="ProfitPrecentage" type="xs:decimal" />
+      <xs:element minOccurs="0" name="VendorInfo" nillable="true" type="tns:SupplierInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProductInfo" nillable="true" type="tns:ProductInfo" />
+  <xs:complexType name="CategoryInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CategoryCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CategoryID" type="xs:int" />
+      <xs:element minOccurs="0" name="CategoryName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CategoryInfo" nillable="true" type="tns:CategoryInfo" />
+  <xs:complexType name="ArrayOfCategoryInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CategoryInfo" nillable="true" type="tns:CategoryInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCategoryInfo" nillable="true" type="tns:ArrayOfCategoryInfo" />
+</xs:schema>

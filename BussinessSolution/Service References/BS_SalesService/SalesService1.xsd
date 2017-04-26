@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/BussinessSolutionServiceBLL" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/BussinessSolutionServiceBLL" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="NextInvoiceInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="InvoiceNum" type="xs:int" />
+      <xs:element minOccurs="0" name="SalesID" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="NextInvoiceInfo" nillable="true" type="tns:NextInvoiceInfo" />
+  <xs:complexType name="SalesInvoiceInfo">
+    <xs:sequence>
+      <xs:element name="InvoiceNum" type="xs:int" />
+      <xs:element name="IsHold" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+      <xs:element name="NetAmount" type="xs:decimal" />
+      <xs:element name="PaidAmount" type="xs:decimal" />
+      <xs:element name="SalesID" type="xs:long" />
+      <xs:element minOccurs="0" name="SalesItemList" nillable="true" type="tns:ArrayOfSalesItemInfo" />
+      <xs:element name="TotalAmount" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SalesInvoiceInfo" nillable="true" type="tns:SalesInvoiceInfo" />
+  <xs:complexType name="ArrayOfSalesItemInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SalesItemInfo" nillable="true" type="tns:SalesItemInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSalesItemInfo" nillable="true" type="tns:ArrayOfSalesItemInfo" />
+  <xs:complexType name="SalesItemInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Amount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="DiscountRate" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ProductID" type="xs:int" />
+      <xs:element minOccurs="0" name="ProductName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Qty" type="xs:decimal" />
+      <xs:element minOccurs="0" name="RetailRate" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Unit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VendorName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SalesItemInfo" nillable="true" type="tns:SalesItemInfo" />
+  <xs:complexType name="ArrayOfSalesInvoiceInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SalesInvoiceInfo" nillable="true" type="tns:SalesInvoiceInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSalesInvoiceInfo" nillable="true" type="tns:ArrayOfSalesInvoiceInfo" />
+</xs:schema>

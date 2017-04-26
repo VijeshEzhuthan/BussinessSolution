@@ -1,0 +1,71 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Custom="http://schemas.microsoft.com/winfx/2006/xaml/presentation/ribbon" 
+    x:Class="BussinessSolution.MainWindow1"
+        xmlns:local="clr-namespace:Common.WindowStyle"
+        xmlns:self="clr-namespace:BussinessSolution"
+         DataContext="{Binding RelativeSource={RelativeSource Self}}"
+        Style="{DynamicResource SkinWindowStyle}"
+        Title="Work Time Tracker" 
+        Icon="Resources\App.ico"
+        Height="{Binding Settings[Height], Mode=TwoWay, Converter={StaticResource SettingConv}}"
+        Width="{Binding Settings[Width], Mode=TwoWay, Converter={StaticResource SettingConv}}"
+        Left="{Binding Settings[Left], Mode=TwoWay, Converter={StaticResource SettingConv}}"
+        Top="{Binding Settings[Top], Mode=TwoWay, Converter={StaticResource SettingConv}}" WindowState="Maximized">
+    <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" >
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Custom:Ribbon Grid.Column="0" Grid.Row="0" >
+                <!--<Custom:Ribbon.Loaded>CollapseQuickAccessToolbar</Custom:Ribbon.Loaded>
+            <x:Code>
+                private void CollapseQuickAccessToolbar(Object sender, RoutedEventArgs e) {
+            ((Grid)VisualTreeHelper.GetChild((DependencyObject)sender, 0)).RowDefinitions[0].Height = new GridLength(0);
+        }
+            </x:Code>-->
+                <Custom:Ribbon.ApplicationMenu>
+                    <Custom:RibbonApplicationMenu Visibility="Collapsed" >
+                    </Custom:RibbonApplicationMenu>
+                </Custom:Ribbon.ApplicationMenu>
+                <Custom:RibbonTab Header="Sales" KeyTip="S" >
+                    <Custom:RibbonGroup x:Name="SalesGroup" >
+                        <Custom:RibbonButton x:Name="NewInvoice" Label="New Invoice" LargeImageSource="Images/sales.png" Click="NewInvoice_Click" KeyTip="I"  >
+                        </Custom:RibbonButton>
+                    </Custom:RibbonGroup>
+                    <Custom:RibbonGroup x:Name="SalesListGroup" >
+                        <Custom:RibbonButton x:Name="SalesList" Label="Sales List" LargeImageSource="Images/index.png" KeyTip="S"  Click="SalesList_Click" >
+                        </Custom:RibbonButton>
+                    </Custom:RibbonGroup>
+                    <Custom:RibbonGroup x:Name="SalesReturnGroup" >
+                        <Custom:RibbonButton x:Name="SalesReturn" Label="Sales Return" LargeImageSource="Images/shopping_bag_empty.png" KeyTip="R" Click="SalesReturn_Click"  >
+                        </Custom:RibbonButton>
+                    </Custom:RibbonGroup>
+                    <Custom:RibbonGroup x:Name="InvoiceHoldGroup" >
+                        <Custom:RibbonButton x:Name="InvoiceHold" Label="Invoice Hold" LargeImageSource="Images/shopping_basket.png" KeyTip="H" Click="InvoiceHold_Click"  >
+                        </Custom:RibbonButton>
+                    </Custom:RibbonGroup>
+                </Custom:RibbonTab>
+                <Custom:RibbonTab Header="Purchase" KeyTip="P" >
+                    <Custom:RibbonGroup x:Name="PurchaseGroup" >
+                        <Custom:RibbonMenuButton LargeImageSource="Images/palet02.png" Label="Purhcase Entry" KeyTip="V">
+                            <!--<Custom:RibbonMenuItem ImageSource="Images/shopping_basket.png" Header="Keep Text Only" KeyTip="T"/>
+                        <Custom:RibbonMenuItem ImageSource="Images/shopping_basket.png" Header="Paste Special..." KeyTip="S"/>-->
+                        </Custom:RibbonMenuButton>
+                    </Custom:RibbonGroup>
+                </Custom:RibbonTab>
+                <Custom:RibbonTab Header="Stock" KeyTip="T" ></Custom:RibbonTab>
+                <Custom:RibbonTab Header="Master Data" KeyTip="M" ></Custom:RibbonTab>
+
+            </Custom:Ribbon>
+            <TabControl Name="tcMdi" Grid.Column="0" Grid.Row="1" Visibility="Visible" HorizontalAlignment="Stretch" VerticalAlignment="Top" VerticalContentAlignment="Stretch" 
+                    HorizontalContentAlignment="Stretch" >
+            </TabControl>
+        </Grid>
+    </ScrollViewer>
+</Window>

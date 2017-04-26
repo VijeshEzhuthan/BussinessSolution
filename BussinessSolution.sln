@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BussinessSolution", "BussinessSolution\BussinessSolution.csproj", "{DE04398F-2059-4CA0-9F1A-9749CA0D0386}"
+	ProjectSection(ProjectDependencies) = postProject
+		{67562CF7-E2DF-4725-B47D-BC805EAC77FF} = {67562CF7-E2DF-4725-B47D-BC805EAC77FF}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BussinessSolutionServiceBLL", "BussinessSolutionServiceBLL\BussinessSolutionServiceBLL.csproj", "{67562CF7-E2DF-4725-B47D-BC805EAC77FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BussinessSolutionServiceDAL", "BussinessSolutionServiceDAL\BussinessSolutionServiceDAL.csproj", "{6F1A870D-2EE0-4953-9A52-72B89C887AFD}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://vijeshtesttfs.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BussinessSolution\\BussinessSolution.csproj
+		SccProjectName1 = BussinessSolution
+		SccLocalPath1 = BussinessSolution
+		SccProjectUniqueName2 = BussinessSolutionServiceBLL\\BussinessSolutionServiceBLL.csproj
+		SccProjectName2 = BussinessSolutionServiceBLL
+		SccLocalPath2 = BussinessSolutionServiceBLL
+		SccProjectUniqueName3 = BussinessSolutionServiceDAL\\BussinessSolutionServiceDAL.csproj
+		SccProjectName3 = BussinessSolutionServiceDAL
+		SccLocalPath3 = BussinessSolutionServiceDAL
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE04398F-2059-4CA0-9F1A-9749CA0D0386}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE04398F-2059-4CA0-9F1A-9749CA0D0386}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE04398F-2059-4CA0-9F1A-9749CA0D0386}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE04398F-2059-4CA0-9F1A-9749CA0D0386}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67562CF7-E2DF-4725-B47D-BC805EAC77FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67562CF7-E2DF-4725-B47D-BC805EAC77FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67562CF7-E2DF-4725-B47D-BC805EAC77FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67562CF7-E2DF-4725-B47D-BC805EAC77FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F1A870D-2EE0-4953-9A52-72B89C887AFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F1A870D-2EE0-4953-9A52-72B89C887AFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F1A870D-2EE0-4953-9A52-72B89C887AFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F1A870D-2EE0-4953-9A52-72B89C887AFD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

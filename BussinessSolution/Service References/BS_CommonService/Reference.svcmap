@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="54430cff-5a21-433b-a8ec-221107a30901" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:36659/CommonService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CommonService.wsdl" MetadataType="Wsdl" ID="82a63999-23c0-40e6-bd1f-45899514a765" SourceId="1" SourceUrl="http://localhost:36659/CommonService.svc?wsdl" />
+    <MetadataFile FileName="CommonService.disco" MetadataType="Disco" ID="3e820a09-9410-482d-9e4b-b313c052e6cf" SourceId="1" SourceUrl="http://localhost:36659/CommonService.svc?disco" />
+    <MetadataFile FileName="CommonService.xsd" MetadataType="Schema" ID="f652c575-440e-4fe9-b2af-4fb9605f4704" SourceId="1" SourceUrl="http://localhost:36659/CommonService.svc?xsd=xsd0" />
+    <MetadataFile FileName="CommonService1.xsd" MetadataType="Schema" ID="a1a26f1b-20de-4caf-be88-4d92ea3563b1" SourceId="1" SourceUrl="http://localhost:36659/CommonService.svc?xsd=xsd1" />
+    <MetadataFile FileName="CommonService2.xsd" MetadataType="Schema" ID="0302af9e-18f5-4e40-961a-3e06146ef300" SourceId="1" SourceUrl="http://localhost:36659/CommonService.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

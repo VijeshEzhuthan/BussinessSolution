@@ -1,0 +1,75 @@
+﻿<UserControl x:Class="BussinessSolution.MasterData.UserInfo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:controls="clr-namespace:BussinessSolution.UserControls"
+             mc:Ignorable="d" 
+             
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <!--<Grid x:Name="userInfoGrid">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,1.5" Opacity="0.8">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FFCDEBF1" Offset="1"/>
+                    <GradientStop Color="#FFC2DADA" Offset="0.209"/>
+                    <GradientStop Color="#FFE5F4F4"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <ScrollViewer VerticalScrollBarVisibility="Visible" 
+                      HorizontalScrollBarVisibility="Disabled"  Margin="5,0,0,0"  >
+                <StackPanel x:Name="stackPanelData" HorizontalAlignment="Stretch">
+                    <Button Width="100" Margin="5,5,10,5" HorizontalAlignment="Right" Content="Add New" Foreground="#FFF6F5F5" FontSize="16" FontFamily="Arial" Click="Button_Click" >
+                        <Button.Effect>
+                            <DropShadowEffect Color="#FFEBF9FF" RenderingBias="Quality" BlurRadius="19"/>
+                        </Button.Effect>
+                        <Button.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FF097892" Offset="1"/>
+                                <GradientStop Color="#FF0CB8DF" Offset="0"/>
+
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+                    <DataGrid Name="dataGrid1" Margin="10" ColumnHeaderHeight="35" HeadersVisibility="Column" Background="#FFF0E6E6" Foreground="#FFF9ECEC">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Width="120"
+				                    Binding="{Binding State}"
+				                    Header="User Name" />
+                            <DataGridTextColumn Width="120"
+				                    Binding="{Binding City}"
+				                    Header="First Name" />
+                            <DataGridTextColumn Width="120"
+				                    Binding="{Binding MaxTemperature}"
+				                    Header="Last Name" />
+                            <DataGridTextColumn Width="120"
+				                    Binding="{Binding MinTemperature}"
+				                    Header="Address" />
+                            <DataGridTextColumn Width="120"
+				                    Binding="{Binding MinTemperature}"
+				                    Header="Phone" />
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>-->
+        <Grid x:Name="userInfoGrid">
+            <StackPanel x:Name="stackPanelData" HorizontalAlignment="Stretch">
+                <Button Width="100" Margin="5,5,10,5" HorizontalAlignment="Right" Content="Add New" Foreground="#FFF6F5F5" FontSize="16" FontFamily="Arial" Click="Button_Click" >
+                    <Button.Effect>
+                        <DropShadowEffect Color="#FFEBF9FF" RenderingBias="Quality" BlurRadius="19"/>
+                    </Button.Effect>
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF097892" Offset="1"/>
+                            <GradientStop Color="#FF0CB8DF" Offset="0"/>
+
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+            </StackPanel>
+        </Grid>
+        <controls:UserEnteryModal x:Name="ModalDialog" />
+    </Grid>
+</UserControl>

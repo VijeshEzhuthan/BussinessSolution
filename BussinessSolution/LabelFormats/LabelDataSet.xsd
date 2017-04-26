@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="LabelDataSet" targetNamespace="http://tempuri.org/LabelDataSet.xsd" xmlns:mstns="http://tempuri.org/LabelDataSet.xsd" xmlns="http://tempuri.org/LabelDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="LabelDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="LabelDataSet" msprop:Generator_UserDSName="LabelDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ProductLabel" msprop:Generator_TableClassName="ProductLabelDataTable" msprop:Generator_TableVarName="tableProductLabel" msprop:Generator_TablePropName="ProductLabel" msprop:Generator_RowDeletingName="ProductLabelRowDeleting" msprop:Generator_RowChangingName="ProductLabelRowChanging" msprop:Generator_RowEvHandlerName="ProductLabelRowChangeEventHandler" msprop:Generator_RowDeletedName="ProductLabelRowDeleted" msprop:Generator_UserTableName="ProductLabel" msprop:Generator_RowChangedName="ProductLabelRowChanged" msprop:Generator_RowEvArgName="ProductLabelRowChangeEvent" msprop:Generator_RowClassName="ProductLabelRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FPRODUCTCODE" msprop:Generator_ColumnVarNameInTable="columnFPRODUCTCODE" msprop:Generator_ColumnPropNameInRow="FPRODUCTCODE" msprop:Generator_ColumnPropNameInTable="FPRODUCTCODEColumn" msprop:Generator_UserColumnName="FPRODUCTCODE" type="xs:string" minOccurs="0" />
+              <xs:element name="FRETAILRATE" msprop:Generator_ColumnVarNameInTable="columnFRETAILRATE" msprop:Generator_ColumnPropNameInRow="FRETAILRATE" msprop:Generator_ColumnPropNameInTable="FRETAILRATEColumn" msprop:Generator_UserColumnName="FRETAILRATE" type="xs:string" minOccurs="0" />
+              <xs:element name="FMRP" msprop:Generator_ColumnVarNameInTable="columnFMRP" msprop:Generator_ColumnPropNameInRow="FMRP" msprop:Generator_ColumnPropNameInTable="FMRPColumn" msprop:Generator_UserColumnName="FMRP" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

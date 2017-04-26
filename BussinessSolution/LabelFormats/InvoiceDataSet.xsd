@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="InvoiceDataSet" targetNamespace="http://tempuri.org/InvoiceDataSet.xsd" xmlns:mstns="http://tempuri.org/InvoiceDataSet.xsd" xmlns="http://tempuri.org/InvoiceDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="InvoiceDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="InvoiceDataSet" msprop:Generator_UserDSName="InvoiceDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="InvoiceMain" msprop:Generator_TableClassName="InvoiceMainDataTable" msprop:Generator_TableVarName="tableInvoiceMain" msprop:Generator_TablePropName="InvoiceMain" msprop:Generator_RowDeletingName="InvoiceMainRowDeleting" msprop:Generator_RowChangingName="InvoiceMainRowChanging" msprop:Generator_RowEvHandlerName="InvoiceMainRowChangeEventHandler" msprop:Generator_RowDeletedName="InvoiceMainRowDeleted" msprop:Generator_UserTableName="InvoiceMain" msprop:Generator_RowChangedName="InvoiceMainRowChanged" msprop:Generator_RowEvArgName="InvoiceMainRowChangeEvent" msprop:Generator_RowClassName="InvoiceMainRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FINVOICENUM" msprop:Generator_ColumnVarNameInTable="columnFINVOICENUM" msprop:Generator_ColumnPropNameInRow="FINVOICENUM" msprop:Generator_ColumnPropNameInTable="FINVOICENUMColumn" msprop:Generator_UserColumnName="FINVOICENUM" type="xs:string" minOccurs="0" />
+              <xs:element name="FSHOPNAME" msprop:Generator_ColumnVarNameInTable="columnFSHOPNAME" msprop:Generator_ColumnPropNameInRow="FSHOPNAME" msprop:Generator_ColumnPropNameInTable="FSHOPNAMEColumn" msprop:Generator_UserColumnName="FSHOPNAME" type="xs:string" minOccurs="0" />
+              <xs:element name="FADDRESS1" msprop:Generator_ColumnVarNameInTable="columnFADDRESS1" msprop:Generator_ColumnPropNameInRow="FADDRESS1" msprop:Generator_ColumnPropNameInTable="FADDRESS1Column" msprop:Generator_UserColumnName="FADDRESS1" type="xs:string" minOccurs="0" />
+              <xs:element name="FADDRESS2" msprop:Generator_ColumnVarNameInTable="columnFADDRESS2" msprop:Generator_ColumnPropNameInRow="FADDRESS2" msprop:Generator_ColumnPropNameInTable="FADDRESS2Column" msprop:Generator_UserColumnName="FADDRESS2" type="xs:string" minOccurs="0" />
+              <xs:element name="FPINCODE" msprop:Generator_ColumnVarNameInTable="columnFPINCODE" msprop:Generator_ColumnPropNameInRow="FPINCODE" msprop:Generator_ColumnPropNameInTable="FPINCODEColumn" msprop:Generator_UserColumnName="FPINCODE" type="xs:string" minOccurs="0" />
+              <xs:element name="FPHONE" msprop:Generator_ColumnVarNameInTable="columnFPHONE" msprop:Generator_ColumnPropNameInRow="FPHONE" msprop:Generator_ColumnPropNameInTable="FPHONEColumn" msprop:Generator_UserColumnName="FPHONE" type="xs:string" minOccurs="0" />
+              <xs:element name="FTINNUM" msprop:Generator_ColumnVarNameInTable="columnFTINNUM" msprop:Generator_ColumnPropNameInRow="FTINNUM" msprop:Generator_ColumnPropNameInTable="FTINNUMColumn" msprop:Generator_UserColumnName="FTINNUM" type="xs:string" minOccurs="0" />
+              <xs:element name="FTOTALAMOUNT" msprop:Generator_ColumnVarNameInTable="columnFTOTALAMOUNT" msprop:Generator_ColumnPropNameInRow="FTOTALAMOUNT" msprop:Generator_ColumnPropNameInTable="FTOTALAMOUNTColumn" msprop:Generator_UserColumnName="FTOTALAMOUNT" type="xs:string" minOccurs="0" />
+              <xs:element name="FDISCOUNT" msprop:Generator_ColumnVarNameInTable="columnFDISCOUNT" msprop:Generator_ColumnPropNameInRow="FDISCOUNT" msprop:Generator_ColumnPropNameInTable="FDISCOUNTColumn" msprop:Generator_UserColumnName="FDISCOUNT" type="xs:string" minOccurs="0" />
+              <xs:element name="FNETAMOUNT" msprop:Generator_ColumnVarNameInTable="columnFNETAMOUNT" msprop:Generator_ColumnPropNameInRow="FNETAMOUNT" msprop:Generator_ColumnPropNameInTable="FNETAMOUNTColumn" msprop:Generator_UserColumnName="FNETAMOUNT" type="xs:string" minOccurs="0" />
+              <xs:element name="FDATE" msprop:Generator_ColumnVarNameInTable="columnFDATE" msprop:Generator_ColumnPropNameInRow="FDATE" msprop:Generator_ColumnPropNameInTable="FDATEColumn" msprop:Generator_UserColumnName="FDATE" type="xs:string" minOccurs="0" />
+              <xs:element name="FTIME" msprop:Generator_ColumnVarNameInTable="columnFTIME" msprop:Generator_ColumnPropNameInRow="FTIME" msprop:Generator_ColumnPropNameInTable="FTIMEColumn" msprop:Generator_UserColumnName="FTIME" type="xs:string" minOccurs="0" />
+              <xs:element name="FSTATE" msprop:Generator_ColumnVarNameInTable="columnFSTATE" msprop:Generator_ColumnPropNameInRow="FSTATE" msprop:Generator_ColumnPropNameInTable="FSTATEColumn" msprop:Generator_UserColumnName="FSTATE" type="xs:string" minOccurs="0" />
+              <xs:element name="FITEMCOUNT" msprop:Generator_ColumnVarNameInTable="columnFITEMCOUNT" msprop:Generator_ColumnPropNameInRow="FITEMCOUNT" msprop:Generator_ColumnPropNameInTable="FITEMCOUNTColumn" msprop:Generator_UserColumnName="FITEMCOUNT" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="InvoiceItem" msprop:Generator_TableClassName="InvoiceItemDataTable" msprop:Generator_TableVarName="tableInvoiceItem" msprop:Generator_TablePropName="InvoiceItem" msprop:Generator_RowDeletingName="InvoiceItemRowDeleting" msprop:Generator_RowChangingName="InvoiceItemRowChanging" msprop:Generator_RowEvHandlerName="InvoiceItemRowChangeEventHandler" msprop:Generator_RowDeletedName="InvoiceItemRowDeleted" msprop:Generator_UserTableName="InvoiceItem" msprop:Generator_RowChangedName="InvoiceItemRowChanged" msprop:Generator_RowEvArgName="InvoiceItemRowChangeEvent" msprop:Generator_RowClassName="InvoiceItemRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FINVOICENUM" msprop:Generator_ColumnVarNameInTable="columnFINVOICENUM" msprop:Generator_ColumnPropNameInRow="FINVOICENUM" msprop:Generator_ColumnPropNameInTable="FINVOICENUMColumn" msprop:Generator_UserColumnName="FINVOICENUM" type="xs:string" minOccurs="0" />
+              <xs:element name="FITEMNUM" msprop:Generator_ColumnVarNameInTable="columnFITEMNUM" msprop:Generator_ColumnPropNameInRow="FITEMNUM" msprop:Generator_ColumnPropNameInTable="FITEMNUMColumn" msprop:Generator_UserColumnName="FITEMNUM" type="xs:string" minOccurs="0" />
+              <xs:element name="FITEMDESC" msprop:Generator_ColumnVarNameInTable="columnFITEMDESC" msprop:Generator_ColumnPropNameInRow="FITEMDESC" msprop:Generator_ColumnPropNameInTable="FITEMDESCColumn" msprop:Generator_UserColumnName="FITEMDESC" type="xs:string" minOccurs="0" />
+              <xs:element name="FQTY" msprop:Generator_ColumnVarNameInTable="columnFQTY" msprop:Generator_ColumnPropNameInRow="FQTY" msprop:Generator_ColumnPropNameInTable="FQTYColumn" msprop:Generator_UserColumnName="FQTY" type="xs:string" minOccurs="0" />
+              <xs:element name="FRETAILRATE" msprop:Generator_ColumnVarNameInTable="columnFRETAILRATE" msprop:Generator_ColumnPropNameInRow="FRETAILRATE" msprop:Generator_ColumnPropNameInTable="FRETAILRATEColumn" msprop:Generator_UserColumnName="FRETAILRATE" type="xs:string" minOccurs="0" />
+              <xs:element name="FDISCOUNT" msprop:Generator_ColumnVarNameInTable="columnFDISCOUNT" msprop:Generator_ColumnPropNameInRow="FDISCOUNT" msprop:Generator_ColumnPropNameInTable="FDISCOUNTColumn" msprop:Generator_UserColumnName="FDISCOUNT" type="xs:string" minOccurs="0" />
+              <xs:element name="FAMOUNT" msprop:Generator_ColumnVarNameInTable="columnFAMOUNT" msprop:Generator_ColumnPropNameInRow="FAMOUNT" msprop:Generator_ColumnPropNameInTable="FAMOUNTColumn" msprop:Generator_UserColumnName="FAMOUNT" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

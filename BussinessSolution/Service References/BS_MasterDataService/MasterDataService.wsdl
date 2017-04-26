@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="MasterDataService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:36659/MasterDataService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:36659/MasterDataService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:36659/MasterDataService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/BussinessSolutionServiceBLL" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IMasterDataService_GetSupplierInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSupplierInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMasterDataService_GetSupplierInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSupplierInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMasterDataService_InsertOrUpdateSupplierInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertOrUpdateSupplierInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMasterDataService_InsertOrUpdateSupplierInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertOrUpdateSupplierInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMasterDataService_GetProductInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMasterDataService_GetProductInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMasterDataService_InsertOrUpdateProductInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertOrUpdateProductInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMasterDataService_InsertOrUpdateProductInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertOrUpdateProductInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMasterDataService_GetCategoryInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCategoryInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMasterDataService_GetCategoryInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCategoryInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMasterDataService_GetGroupCategoryInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGroupCategoryInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMasterDataService_GetGroupCategoryInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGroupCategoryInfoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IMasterDataService">
+    <wsdl:operation name="GetSupplierInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMasterDataService/GetSupplierInfo" message="tns:IMasterDataService_GetSupplierInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMasterDataService/GetSupplierInfoResponse" message="tns:IMasterDataService_GetSupplierInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertOrUpdateSupplierInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMasterDataService/InsertOrUpdateSupplierInfo" message="tns:IMasterDataService_InsertOrUpdateSupplierInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMasterDataService/InsertOrUpdateSupplierInfoResponse" message="tns:IMasterDataService_InsertOrUpdateSupplierInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProductInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMasterDataService/GetProductInfo" message="tns:IMasterDataService_GetProductInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMasterDataService/GetProductInfoResponse" message="tns:IMasterDataService_GetProductInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertOrUpdateProductInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMasterDataService/InsertOrUpdateProductInfo" message="tns:IMasterDataService_InsertOrUpdateProductInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMasterDataService/InsertOrUpdateProductInfoResponse" message="tns:IMasterDataService_InsertOrUpdateProductInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCategoryInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMasterDataService/GetCategoryInfo" message="tns:IMasterDataService_GetCategoryInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMasterDataService/GetCategoryInfoResponse" message="tns:IMasterDataService_GetCategoryInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupCategoryInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMasterDataService/GetGroupCategoryInfo" message="tns:IMasterDataService_GetGroupCategoryInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMasterDataService/GetGroupCategoryInfoResponse" message="tns:IMasterDataService_GetGroupCategoryInfo_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IMasterDataService" type="tns:IMasterDataService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetSupplierInfo">
+      <soap:operation soapAction="http://tempuri.org/IMasterDataService/GetSupplierInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertOrUpdateSupplierInfo">
+      <soap:operation soapAction="http://tempuri.org/IMasterDataService/InsertOrUpdateSupplierInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductInfo">
+      <soap:operation soapAction="http://tempuri.org/IMasterDataService/GetProductInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertOrUpdateProductInfo">
+      <soap:operation soapAction="http://tempuri.org/IMasterDataService/InsertOrUpdateProductInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCategoryInfo">
+      <soap:operation soapAction="http://tempuri.org/IMasterDataService/GetCategoryInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupCategoryInfo">
+      <soap:operation soapAction="http://tempuri.org/IMasterDataService/GetGroupCategoryInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MasterDataService">
+    <wsdl:port name="BasicHttpBinding_IMasterDataService" binding="tns:BasicHttpBinding_IMasterDataService">
+      <soap:address location="http://localhost:36659/MasterDataService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

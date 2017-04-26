@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/BussinessSolutionServiceBLL" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/BussinessSolutionServiceBLL" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfUnitOfMeasureInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="UnitOfMeasureInfo" nillable="true" type="tns:UnitOfMeasureInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUnitOfMeasureInfo" nillable="true" type="tns:ArrayOfUnitOfMeasureInfo" />
+  <xs:complexType name="UnitOfMeasureInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="UnitID" type="xs:int" />
+      <xs:element minOccurs="0" name="UnitOfMeasure" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UnitOfMeasureInfo" nillable="true" type="tns:UnitOfMeasureInfo" />
+  <xs:complexType name="ArrayOfVendorInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VendorInfo" nillable="true" type="tns:VendorInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVendorInfo" nillable="true" type="tns:ArrayOfVendorInfo" />
+  <xs:complexType name="VendorInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="VendorID" type="xs:int" />
+      <xs:element minOccurs="0" name="VendorName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VendorInfo" nillable="true" type="tns:VendorInfo" />
+  <xs:complexType name="CompanyInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Address1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Address2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CompanyName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Phone1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Phone2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Pincode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="State" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TinNum" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CompanyInfo" nillable="true" type="tns:CompanyInfo" />
+</xs:schema>

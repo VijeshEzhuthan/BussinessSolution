@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="32c48cfc-a2d3-4307-aa73-a6918d1da0e3" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:36659/PurchaseService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PurchaseService.wsdl" MetadataType="Wsdl" ID="ed5e77fe-0861-4349-9fa1-451c9a16ea70" SourceId="1" SourceUrl="http://localhost:36659/PurchaseService.svc?wsdl" />
+    <MetadataFile FileName="PurchaseService.xsd" MetadataType="Schema" ID="5b43faad-8b37-4a4f-a4a4-77f921425074" SourceId="1" SourceUrl="http://localhost:36659/PurchaseService.svc?xsd=xsd2" />
+    <MetadataFile FileName="PurchaseService.disco" MetadataType="Disco" ID="539706d9-28ea-430d-b7b1-087ecea977aa" SourceId="1" SourceUrl="http://localhost:36659/PurchaseService.svc?disco" />
+    <MetadataFile FileName="PurchaseService1.xsd" MetadataType="Schema" ID="839aee4e-9372-4855-a4f5-8304a1ba02e5" SourceId="1" SourceUrl="http://localhost:36659/PurchaseService.svc?xsd=xsd0" />
+    <MetadataFile FileName="PurchaseService2.xsd" MetadataType="Schema" ID="8224e641-2a8f-4797-b960-d2f6a1f1317d" SourceId="1" SourceUrl="http://localhost:36659/PurchaseService.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
